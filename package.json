@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "pnpm lint && pnpm prettier && react-router build",
-    "dev": "react-router dev",
+    "dev": "react-router dev --host",
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
@@ -16,6 +16,7 @@
     "isbot": "^5.1.27",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-dropzone": "^14.3.8",
     "react-router": "^7.7.1",
     "zustand": "^5.0.7"
   },
