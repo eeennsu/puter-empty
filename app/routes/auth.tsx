@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useNavigate, useSearchParams } from 'react-router';
-import { usePuterStore } from '~/features/home/lib/puter';
+import { usePuterStore } from '~/shared/store/puter';
 
 export const meta = () => [
   { title: 'Resume Analyzer | Auth' },

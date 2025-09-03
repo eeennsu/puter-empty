@@ -24,13 +24,13 @@ interface KVItem {
 }
 
 interface ChatMessageContent {
-  type: "file" | "text";
+  type: 'file' | 'text';
   puter_path?: string;
   text?: string;
 }
 
 interface ChatMessage {
-  role: "user" | "assistant" | "system";
+  role: 'user' | 'assistant' | 'system';
   content: string | ChatMessageContent[];
 }
 
@@ -40,7 +40,7 @@ interface PuterChatOptions {
   max_tokens?: number;
   temperature?: number;
   tools?: {
-    type: "function";
+    type: 'function';
     function: {
       name: string;
       description: string;
